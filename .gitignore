@@ -1,0 +1,19 @@
+# Wi-Fi password lives here, never commit it (copy secrets.example.h -> secrets.h)
+firmware/**/secrets.h
+
+# Recordings and voice previews made by the tools
+recordings/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build output
+build/
+docs/*.pdf.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

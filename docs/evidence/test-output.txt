@@ -1,0 +1,9 @@
+[PASS] 400 Hz bass cut: 200 Hz -12.3 dB, 400 Hz -3.0 dB, 1 kHz -0.3 dB, 3 kHz -0.1 dB
+[PASS] compressor on real speech: peak 28000 (limit 28000), speech loudness +8.0 dB
+[PASS] link message framing: b'ANS1' 13 bytes b'Shabaash beta'
+[PASS] sentence-by-sentence streaming: website sends heard 0.5 s, sentences [1.5, 2.5, 3.5] s -> received heard [0.8], sentences [1.9, 2.9, 3.9] (lag [0.4, 0.4, 0.4] s)
+[PASS] find toy on Wi-Fi: found 192.168.1.7 in 1.2 s
+Website -> toy: 1.0 s of Nani's website speech
+[PASS] website speech to toy: messages [('SAY1', 7), ('RPL1', 32000), ('END1', 0)] (1.0 s at 48 kHz -> 32000 bytes at 16 kHz)
+
+6/6 passed

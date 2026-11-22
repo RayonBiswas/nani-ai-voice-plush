@@ -1,0 +1,6 @@
+# arduino-cli compile, Arduino-ESP32 core 3.3.11, board esp32:esp32:esp32s3 (2026-11-22)
+nani-full      exit 0  Sketch uses 1221578 bytes (93%) of program storage space. Maximum is 1310720 bytes.
+mic-test       exit 0  Sketch uses 316058 bytes (24%) of program storage space. Maximum is 1310720 bytes.
+speaker-test   exit 0  Sketch uses 487570 bytes (37%) of program storage space. Maximum is 1310720 bytes.
+mic-to-laptop  exit 0  Sketch uses 324823 bytes (24%) of program storage space. Maximum is 1310720 bytes.
+mic-wifi       exit 0  Sketch uses 938424 bytes (71%) of program storage space. Maximum is 1310720 bytes.

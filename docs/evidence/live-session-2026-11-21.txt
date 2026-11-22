@@ -1,0 +1,36 @@
+# Real run on the hardware, 2026-11-21: toy (ESP32-S3) <-> laptop brain (nani_brain.py, website mode)
+# Copied verbatim from the brain's terminal output. "Aarav" is the website's demo child persona.
+# [heard at X s] / [piece N at X s] = seconds after the toy's speech reached the brain.
+
+Aarav: Tuesday के बाद क्या आता है?   [heard at 1.4 s]
+Nani : Tuesday ke baad Wednesday aata hai,   [piece 1 at 3.6 s, 2.6 s long]
+Nani : beta!   [piece 2 at 3.7 s, 1.1 s long]
+Nani : Wednesday ko Hindi mein Budhwaar kehte hain.   [piece 3 at 3.9 s, 3.3 s long]
+Nani : Aaj M for Mango hai, tera favourite!   [piece 4 at 4.5 s, 4.0 s long]
+Nani : Kya hum aam ginenge, ya Monkey ki awaaz sunenge?   [piece 5 at 7.9 s, 4.3 s long]
+       (answer complete in 15.1 s)
+
+Aarav: (Aarav made a sound, not words: maybe a roar, a laugh or an animal noise)   [heard at 1.4 s]
+Nani : Shabaash, Aarav!   [piece 1 at 3.4 s, 2.0 s long]
+Nani : Sher ka roar ya bandar ki cheekh?   [piece 2 at 3.9 s, 3.2 s long]
+Nani : Tera lion wala din yaad hai, 14 Nov ko!   [piece 3 at 4.5 s, 4.0 s long]
+Nani : Aaj M for Monkey bhi hai, bandar ki awaaz sunega?   [piece 4 at 6.8 s, 4.4 s long]
+       (answer complete in 13.3 s)
+
+Aarav: Hello नानी, Tuesday के बाद क्या आता है?   [heard at 1.9 s]
+Website fallback: slow_brain   [at 8.7 s]
+       (answer complete in 10.7 s)
+
+Aarav: नानी, Tuesday के बाद क्या आता है?   [heard at 1.6 s]
+Nani : Tuesday ke baad Wednesday aata hai,   [piece 1 at 3.8 s, 2.7 s long]
+Nani : beta!   [piece 2 at 3.9 s, 1.1 s long]
+Nani : Wednesday ko Hindi mein Budhwaar kehte hain.   [piece 3 at 4.3 s, 3.4 s long]
+Nani : Aaj M for Mango hai, tera favourite!   [piece 4 at 4.5 s, 3.9 s long]
+Nani : Kya hum aam ginenge, ya Monkey ki awaaz sunenge?   [piece 5 at 8.2 s, 4.3 s long]
+       (answer complete in 15.5 s)
+
+Aarav: Apple कौन से color का होता है?   [heard at 1.9 s]
+Nani : Apple laal, hara,   [piece 1 at 3.5 s, 2.5 s long]
+Nani : ya peela ho sakta hai, beta!   [piece 2 at 3.9 s, 2.4 s long]
+Nani : Tera favourite kaunsa colour hai?   [piece 3 at 4.3 s, 2.4 s long]
+       (answer complete in 8.9 s)
