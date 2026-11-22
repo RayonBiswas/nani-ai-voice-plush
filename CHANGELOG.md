@@ -5,6 +5,8 @@ milestones derived from the build history ([docs/09-project-history.md](docs/09-
 the repository starts at 1.0.0.
 
 ## [Unreleased]
+### Added
+- Three end-to-end demo videos and two photos of the build packed in a box (`docs/media/`).
 ### Planned
 - LED eyes on GPIO 9–14, speaker enclosure, fitting into the plush (see [roadmap](docs/10-known-issues-roadmap.md)).
 

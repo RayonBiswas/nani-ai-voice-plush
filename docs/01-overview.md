@@ -70,7 +70,8 @@ looking at the website.
 | Voice clip generator | [`brain/make_voice.py`](../brain/make_voice.py) |
 | Automated tests | [`tests/run_tests.py`](../tests/run_tests.py) |
 | Parts list and wiring | [03 — Hardware](03-hardware.md) |
-| Demo video | [`docs/media/demo-2026-11-21.mp4`](media/demo-2026-11-21.mp4) |
+| Demo videos | end-to-end conversations: [56 s](media/demo-conversation-56s.mp4), [35 s](media/demo-conversation-35s.mp4), [26 s](media/demo-conversation-26s.mp4); first sound test: [18 s](media/demo-2026-11-21.mp4) |
+| Build photos | [top](media/prototype-in-box-top.jpg), [wide](media/prototype-in-box-wide.jpg) |
 
 ## 6. Constraints and deliberate choices
 

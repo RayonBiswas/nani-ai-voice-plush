@@ -8,8 +8,15 @@
 **Hardware add-on for the Tutor Grandma buildathon project**: the web app (agents, memory, voice) was
 built by Hrishikesh Hundekari; this repository is the physical toy and the bridge that connects it.
 
-[![Demo video: the breadboard prototype speaking](docs/media/demo-poster.jpg)](docs/media/demo-2026-11-21.mp4)
-*Breadboard prototype, 21 Nov 2026 (18 s): [watch the video](docs/media/demo-2026-11-21.mp4).*
+## Demo
+
+| End-to-end conversation (56 s) | Prototype packed in a box | First sound test (18 s) |
+|---|---|---|
+| [![Toy answering a Hindi question, laptop console showing the conversation](docs/media/demo-conversation-56s-poster.jpg)](docs/media/demo-conversation-56s.mp4) | ![Speaker, breadboard, amp, power bank and ESP32-S3 inside a cardboard box](docs/media/prototype-in-box-top.jpg) | [![Breadboard prototype speaking](docs/media/demo-poster.jpg)](docs/media/demo-2026-11-21.mp4) |
+| [watch](docs/media/demo-conversation-56s.mp4) · more: [35 s](docs/media/demo-conversation-35s.mp4), [26 s](docs/media/demo-conversation-26s.mp4) | [another view](docs/media/prototype-in-box-wide.jpg) | [watch](docs/media/demo-2026-11-21.mp4) |
+
+*Videos recorded 21–22 Nov 2026. In the conversation videos the laptop console shows what the toy heard
+(`Aarav: …`) and Nani's streamed answer (`Nani: … [piece N]`) while the toy speaks it.*
 
 ## What it does
 

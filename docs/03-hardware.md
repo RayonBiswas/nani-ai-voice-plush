@@ -84,9 +84,16 @@ flowchart LR
     P2 --- SW{{Latching switch<br/>middle pin}}; SW --- G
 ```
 
-> 📌 **Photo / drawn connection diagram:** the builder's own diagram will be added as
-> `docs/media/wiring-diagram.png`. Until then, the table above is authoritative (it matches the pin
-> constants in [`nani-full.ino`](../firmware/nani-full/nani-full.ino)).
+### The real build (22 Nov 2026)
+
+| Top view | Wide view |
+|---|---|
+| ![Speaker, breadboard with MAX98357A and 1000 µF capacitor, power bank and ESP32-S3 in a cardboard box](media/prototype-in-box-top.jpg) | ![The same build from further away](media/prototype-in-box-wide.jpg) |
+
+Everything is in one cardboard box: speaker (top left), breadboard with the MAX98357A amp and the
+1000 µF capacitor (middle), power bank (right), ESP32-S3 on its yellow headers (front edge), mic and
+switch on jumper leads. The pin table above is authoritative; it matches the pin constants in
+[`nani-full.ino`](../firmware/nani-full/nani-full.ino).
 
 ## 4. Power
 
