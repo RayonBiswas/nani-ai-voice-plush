@@ -14,7 +14,12 @@ cd nani-ai-voice-plush
 pip install -r requirements.txt
 ffmpeg -version          # must print a version; install from https://ffmpeg.org if not
 ```
-Microsoft Edge must be installed (the website mirror uses it; no browser download needed).
+Microsoft Edge or Google Chrome must be installed (the website mirror uses it); otherwise run
+`python -m playwright install chromium` once.
+
+**macOS:** `brew install ffmpeg`, `python3 -m pip install -r requirements.txt`, `chmod +x start-nani.sh`.
+The fallback voice uses macOS `say` instead of the Windows Zira voice. The macOS path is written but not yet
+tested on a real Mac (known issue K16).
 Success signal: `pip` finishes without errors.
 
 ## 2. One-time setup: Arduino IDE
@@ -48,7 +53,7 @@ Wi-Fi: connected. ...
 ## 4. Run a demo
 
 1. Toy on the power bank (or USB).
-2. Double-click **`start-nani.bat`**. Wait for `Connected. Talk to Nani!` and
+2. Double-click **`start-nani.bat`** (macOS: `./start-nani.sh`). Wait for `Connected. Talk to Nani!` and
    `Website mirror: stage page is open`.
 3. Press the switch → greeting. Ask a question, pause → "Hmm…" → Nani answers.
 4. Press the switch again to put her to sleep; close the window to stop the bridge.

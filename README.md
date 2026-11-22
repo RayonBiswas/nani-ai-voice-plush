@@ -70,7 +70,8 @@ copy firmware\nani-full\secrets.example.h firmware\nani-full\secrets.h
 ```
 3. Open `firmware/nani-full/nani-full.ino` in the Arduino IDE → Board **ESP32S3 Dev Module**,
    USB CDC On Boot **Enabled**, PSRAM **OPI PSRAM** → Upload.
-4. Double-click **`start-nani.bat`** (it finds the toy on the Wi-Fi by itself).
+4. Windows: double-click **`start-nani.bat`**. macOS: `brew install ffmpeg`, then `chmod +x start-nani.sh && ./start-nani.sh`.
+   Either way it finds the toy on the Wi-Fi by itself.
 5. Press the toy's switch and talk to Nani.
 
 Step-by-step with the output you should see, and troubleshooting:
@@ -85,7 +86,7 @@ brain/                   nani_brain.py (laptop bridge), make_voice.py (voice cli
 tools/                   laptop helpers for the test sketches (play / record the mic)
 tests/run_tests.py       automated checks of the laptop side (no hardware needed)
 docs/                    full documentation, ADRs, beginner tutorial, evidence logs
-start-nani.bat           one-click launcher for the laptop bridge
+start-nani.bat / .sh     one-click launcher for the laptop bridge (Windows / macOS)
 ```
 
 ## Documentation

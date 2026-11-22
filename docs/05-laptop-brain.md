@@ -52,7 +52,8 @@ Nani : Tera favourite kaunsa colour hai?   [piece 3 at 4.3 s, 2.4 s long]
 The website's reminders are fired by its **stage page in a browser**, not by a server. So the bridge
 opens that page itself:
 
-1. Playwright launches the installed **Microsoft Edge**, headless, with `--mute-audio` and a fake
+1. Playwright launches an installed browser, headless: **Microsoft Edge**, else **Google Chrome**, else
+   Playwright's own Chromium, with `--mute-audio` and a fake
    microphone.
 2. An init script (`HOOK_JS`) wraps `AudioBufferSourceNode.prototype.start`: every sound the page
    starts is copied (mono float32 + its sample rate, honouring offset/duration) to Python via
@@ -90,7 +91,10 @@ python brain/make_voice.py "Good night Aarav!"                       # greeting 
 python brain/make_voice.py "Hmm, let me think!" --name FILLER        # -> nani_filler.h
 python brain/make_voice.py "Wait beta, I am waking up!" --name OFFLINE --speed 1
 ```
-Pipeline: Windows Zira TTS (16 kHz) → trim silence (keep 50 ms) → 400 Hz bass cut → compression
+Text-to-speech per platform: Windows "Microsoft Zira" (System.Speech), macOS `say` (Samantha voice), Linux
+`espeak-ng`; macOS/Linux output goes through ffmpeg to 16 kHz.
+
+Pipeline: TTS (16 kHz) → trim silence (keep 50 ms) → 400 Hz bass cut → compression
 (threshold −26 dB, ratio 4:1, 5 ms attack, 80 ms release) → soften the top 0.5 % of peaks →
 peak 28000 → C array. The greeting is written to `firmware/nani-full/` and
 `firmware/tests/speaker-test/`; other clips only to `nani-full`. A preview WAV goes to `recordings/`.

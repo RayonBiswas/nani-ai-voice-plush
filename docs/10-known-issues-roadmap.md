@@ -28,6 +28,7 @@ Severity: **High** = wrong output or broken entry point · **Medium** = limits t
 | K13 | Low | Flash 93 % full with the default partition | `nani-full` | partition *16M Flash (3MB APP/9.9MB FATFS)* |
 | K14 | Low | A new random website session per bridge run | `nani_brain.py:369` | keep one session ID in a small file |
 | K15 | Low | `test_compress` needs the Windows Zira voice | `tests/run_tests.py` | skip on non-Windows |
+| K16 | Medium | macOS support (`start-nani.sh`, `say` voice, Chrome fallback for the mirror) is written but not yet run on a real Mac | `brain/`, `start-nani.sh` | first run on a colleague's Mac; fix what breaks |
 
 ## Roadmap
 

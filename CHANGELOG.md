@@ -6,7 +6,11 @@ the repository starts at 1.0.0.
 
 ## [Unreleased]
 ### Added
+- macOS support for the laptop bridge: `start-nani.sh`, macOS `say` / Linux `espeak-ng` fallback voice, mirror
+  falls back from Edge to Chrome to Playwright's Chromium (not yet tested on a Mac).
 - Three end-to-end demo videos and two photos of the build packed in a box (`docs/media/`).
+### Fixed
+- The bridge no longer drops the connection if the apology voice can't be generated; it still ends the turn.
 ### Planned
 - LED eyes on GPIO 9–14, speaker enclosure, fitting into the plush (see [roadmap](docs/10-known-issues-roadmap.md)).
 
